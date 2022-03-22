@@ -1,5 +1,12 @@
-@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
-
+/* Lo que hacemos ahora es importar las fuentes pero desde el local y no desde un link externo  
+necesitamos instalar url-loader file-loader*/ 
+@font-face {
+	font-family: 'Ubuntu';
+	src: url('../assets/fonts/ubuntu-300.woff') format('woff'), /* aqui buscamos en donde están las fuentes */ 
+	url('../assets/fonts/ubuntu-300.woff2') format('woff2');
+	font-weight: 400;
+	font-size: normal;
+}
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
